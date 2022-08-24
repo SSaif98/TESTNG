@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Loan_Department">
+	<test thread-count="5" name="Personal_Loan">
+		<classes>
+			<class name="test.introTest">
+				<methods>
+					<exclude name="Personal.*" />
+				</methods>
+			</class>
+			<class name="test.introTest2" />
+
+		</classes>
+	</test>
+
+	<test name="Home_Loan">
+		<classes>
+			<class name="test.introTest3">
+				<methods>
+					<exclude name="MobileHomeLoan" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Office_Loan">
+		<classes>
+			<class name="test.introTest4">
+				<methods>
+					<include name="APIOfficeLoan" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+</suite>
+<!--Exclude means exculde the particular method/test from testing-->
+<!--Include means include specific case and no other case-->
+<!--We can use regular expression if we have 40 cases starts with keyword Personal then we can not write 40 times exclude expression for this we can use regular expression-->

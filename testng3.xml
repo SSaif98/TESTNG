@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Loan_Department">
+	<test thread-count="5" name="Reression">
+		<groups>
+		<run>
+			<include name="smoke"/>
+		</run>
+		</groups>
+		<classes>
+			<class name="test.introTest"/>
+			<class name="test.introTest2"/>
+			<class name="test.introTest3"/>
+			<class name="test.introTest4"/>
+		</classes>
+	</test>
+
+</suite><!--we can a new testng.xml file and run only cases defined classes with a unique group name-->
