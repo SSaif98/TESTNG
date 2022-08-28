@@ -1,11 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Loan_Department">
+<suite name="Loan_Department" parallel= "tests" thread-count ="2">
+<parameter name="URL" value="qaacademy.com"/>
+<listeners>
+	<listener class-name="test.listenerTestNFG"/>
+</listeners>
+
 	<test thread-count="5" name="Personal_Loan">
+	<parameter name="URL2" value="personalLoan.com"/>
+	<parameter name="APIKEY" value= "sdhukHJLkai90"/>
 		<classes>
 			<class name="test.introTest">
 				<methods>
-					<exclude name="Personal.*" />
+					<exclude name="PersonalLoan_2" />
+					<!--<exclude name="Personal.*" />-->
+
 				</methods>
 			</class>
 			<class name="test.introTest2" />
