@@ -21,6 +21,6 @@ public class introTest2 {
 	}
 	@Test(groups= {"smoke"})
 	public void group2() {
-		System.out.println("G-2");
+		System.out.println("G-22");
 	}
 }
