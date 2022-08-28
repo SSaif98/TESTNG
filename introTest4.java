@@ -28,6 +28,8 @@ public class introTest4 {
 	public void AfterMethod() {
 		System.out.println("It will excute After excuting each method in introTest4 class");
 	}
+	
+	
 	@Test
 	public void WebOfficeLoan() {
 		System.out.println("WOL");
